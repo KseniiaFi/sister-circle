@@ -37,6 +37,7 @@
       <p class="text-gray-500 mb-6">Help others — get help yourself</p>
 
       <form class="flex flex-col gap-4">
+
         <div>
           <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
             Your name
@@ -79,50 +80,18 @@
           >
         </div>
 
-        <div>
-          <label for="category" class="block text-sm font-medium text-gray-700 mb-1">
-            How can you help?
-          </label>
-          <select
-            id="category"
-            name="category"
-            class="w-full border border-gray-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-rose-300"
-          >
-            <option value="">Select a category</option>
-            <optgroup label="Professional help">
-              <option value="legal">Legal assistance</option>
-              <option value="resume">Resume and career</option>
-              <option value="finance">Finance and budgeting</option>
-            </optgroup>
-            <optgroup label="Learning">
-              <option value="languages">Language learning</option>
-              <option value="it">IT and technology</option>
-              <option value="study">Studying and homework help</option>
-            </optgroup>
-            <optgroup label="Family and home">
-              <option value="kids">Children and parenting</option>
-              <option value="cooking">Cooking and recipes</option>
-              <option value="home">Home and DIY</option>
-            </optgroup>
-            <optgroup label="Wellbeing">
-              <option value="psychology">Emotional support and psychology</option>
-              <option value="health">Health and wellness</option>
-              <option value="sport">Fitness and sport</option>
-            </optgroup>
-            <optgroup label="Community">
-              <option value="swap">Item swap and gifting</option>
-              <option value="creative">Art, crafts and creativity</option>
-              <option value="other">Other</option>
-            </optgroup>
-          </select>
-        </div>
-
         <button
           type="submit"
           class="w-full bg-rose-500 text-white font-semibold py-3 rounded-lg hover:bg-rose-600 transition-colors mt-2"
         >
           Create account
         </button>
+
+        <p class="text-center text-sm text-gray-400">
+          Already have an account?
+          <a href="/login" class="text-rose-500 hover:underline">Sign in</a>
+        </p>
+
       </form>
     </section>
 
@@ -160,6 +129,38 @@
             <span>Olga · Tampere</span>
             <span class="bg-amber-100 text-amber-600 px-2 py-1 rounded-full">
               Cooking
+            </span>
+          </footer>
+        </article>
+
+        <!-- Help request card -->
+        <article class="bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow">
+          <h3 class="font-semibold text-gray-900 mb-2">
+            Need help with a legal document
+          </h3>
+          <p class="text-gray-500 text-sm mb-4">
+            Looking for someone to review a rental agreement
+          </p>
+          <footer class="flex items-center justify-between text-xs text-gray-400">
+            <span>Elena · Espoo</span>
+            <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-full">
+              Legal
+            </span>
+          </footer>
+        </article>
+
+        <!-- Help request card -->
+        <article class="bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow">
+          <h3 class="font-semibold text-gray-900 mb-2">
+            Read a bedtime story in English 📚
+          </h3>
+          <p class="text-gray-500 text-sm mb-4">
+            My daughter loves stories, would be great online via call
+          </p>
+          <footer class="flex items-center justify-between text-xs text-gray-400">
+            <span>Irina · Vantaa</span>
+            <span class="bg-purple-100 text-purple-600 px-2 py-1 rounded-full">
+              Languages
             </span>
           </footer>
         </article>
