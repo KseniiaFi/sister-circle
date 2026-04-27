@@ -59,3 +59,33 @@ console.log('Request #3:', findRequest(3));
 // Calculate total points available
 const totalPoints = helpRequests.reduce((sum, request) => sum + request.points, 0);
 console.log('Total points available:', totalPoints); // 38
+
+// --- Operators practice ---
+
+// Find only open requests with points more than 7
+const valuableOpenRequests = helpRequests.filter(
+  (request) => request.isOpen === true && request.points > 7,
+);
+console.log('Valuable open requests:', valuableOpenRequests.length); // 2
+
+// --- Closure practice ---
+
+// User points counter using closure
+const createUserCounter = (userName, startPoints) => {
+  let points = startPoints;
+
+  const earnPoints = (amount) => {
+    points = points + amount;
+    console.log(`${userName} now has ${points} points 🌸`);
+  };
+
+  return earnPoints;
+};
+
+const anna = createUserCounter('Anna', 0);
+const maria = createUserCounter('Maria', 10);
+
+anna(5); // Anna now has 5 points 🌸
+anna(8); // Anna now has 13 points 🌸
+maria(3); // Maria now has 13 points 🌸
+anna(2); // Anna now has 15 points 🌸  ← Анна помнит свои очки!
